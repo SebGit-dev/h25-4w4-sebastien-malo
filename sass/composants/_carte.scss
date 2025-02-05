@@ -1,8 +1,66 @@
-.galerie{
-  height: 400px;
-  background-color: aqua;
-  &__fig img{
-    height: 50px;
+// composant carte
+
+.carte {
+  font-family: "Poppins", serif;
+  font-style: normal;
+
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.253);
+
+  &__grande {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+    padding: 10px;
+
+    @media screen and (max-width:$point__rupture) {
+      flex-direction: column;
+    }
   }
 
+  &__contenu {
+    margin: 0;
+    margin-bottom: 1vh;
+    padding-top: 1vh;
+  }
+
+  &__input {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid rgb(86, 209, 203);
+
+    color: rgb(142, 142, 142);
+    
+    &:hover {
+      border: 2px solid rgb(86, 209, 203);
+    }
+  }
+
+  &__bouton {
+    height: 3vh;
+    width: 16vh;
+    margin-top: 4vh;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(86, 209, 203);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &--actif {
+      background-color: white;
+    }
+
+    &:hover {
+      background-color: rgb(242, 242, 242);
+    }
+  }
 }

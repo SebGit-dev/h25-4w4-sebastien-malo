@@ -1,7 +1,7 @@
 .entete{
     font-family: "Poppins", serif;
     font-style: normal;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,9 +17,11 @@
         flex-wrap: wrap;
 
     }
-
     &__menu{
         text-transform: uppercase;
+    }
+    &__logo img{
+        height: 150px;
     }
 }
 

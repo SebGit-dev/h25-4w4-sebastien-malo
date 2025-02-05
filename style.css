@@ -39,12 +39,60 @@ Les composants
   padding: 2px 5px;
 }
 
-.galerie {
-  height: 400px;
-  background-color: aqua;
+.carte {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.253);
 }
-.galerie__fig img {
-  height: 50px;
+.carte__grande {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4%;
+  padding: 10px;
+}
+@media screen and (max-width: 700px) {
+  .carte__grande {
+    flex-direction: column;
+  }
+}
+.carte__contenu {
+  margin: 0;
+  margin-bottom: 1vh;
+  padding-top: 1vh;
+}
+.carte__input {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid rgb(86, 209, 203);
+  color: rgb(142, 142, 142);
+}
+.carte__input:hover {
+  border: 2px solid rgb(86, 209, 203);
+}
+.carte__bouton {
+  height: 3vh;
+  width: 16vh;
+  margin-top: 4vh;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(86, 209, 203);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.carte__bouton--actif {
+  background-color: white;
+}
+.carte__bouton:hover {
+  background-color: rgb(242, 242, 242);
 }
 
 .recherche {
@@ -54,6 +102,7 @@ Les composants
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .recherche__input {
+  color: rgb(164, 164, 164);
   flex: 1;
   height: 1.8rem;
   border: none;
@@ -129,7 +178,6 @@ button {
 }
 
 .galerie {
-  height: 400px;
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 4vh;
@@ -140,8 +188,10 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 1vw;
-  row-gap: 1vh;
-  border-radius: 8px;
+  row-gap: 1vw;
+}
+.galerie__fig img {
+  height: 200px;
 }
 
 .entete {
@@ -165,4 +215,7 @@ button {
 }
 .entete__menu {
   text-transform: uppercase;
+}
+.entete__logo img {
+  height: 150px;
 }/*# sourceMappingURL=style.css.map */

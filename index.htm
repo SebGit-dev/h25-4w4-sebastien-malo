@@ -46,7 +46,7 @@
                 </nav>
                 <div class="entete__recherche">
                     <form  class="recherche">
-                        <input type="text" class="recherche__input">
+                        <input type="text" class="recherche__input" onfocus="this.value=''" value="Recherche">
                         <img  class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="20" height="20">
                     </form>
                 </div>
@@ -77,6 +77,29 @@
             </div>
         </div>
     </section>
+
+    <section class="carte">
+        <div class="carte__grande">
+          <div class="entete__recherche">
+            <h4 class="carte__contenu">Nom</h4>
+              <input type="text" class="carte__input" onfocus="this.value=''" value="Nom">
+          </div>
+          <div class="entete__recherche">
+            <h4 class="carte__contenu">Prénom</h4>
+              <input type="text" class="carte__input" onfocus="this.value=''" value="Prénom">
+          </div>
+          <div class="entete__recherche">
+            <h4 class="carte__contenu">Courriel</h4>
+              <input type="text" class="carte__input" onfocus="this.value=''" value="Courriel">
+          </div>
+          <div class="entete__recherche">
+            <h4 class="carte__contenu">Téléphone</h4>
+              <input type="text" class="carte__input" onfocus="this.value=''" value="Téléphone">
+          </div>
+          <button class="carte__bouton">S'INSCRIRE</button>
+        </div>
+    </section> 
+
     <section class="galerie">
         <figure class="galerie__fig">
             <img src="images/landscape1.png" alt="">

@@ -4,7 +4,6 @@
     max-width: 1000px;
     font-family: "Poppins", serif;
     font-style: normal;
-
 }
 
 .hero{
@@ -60,19 +59,19 @@ button{
 }
 
 .galerie {
-    height: 400px;
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 4vh;
   
     &__fig {
-      max-width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      column-gap: 1vw;
-      row-gap: 1vh;
-  
-      border-radius: 8px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 1vw;
+        row-gap: 1vw;
+    }
+    &__fig img {
+        height: 200px;
     }
 }
