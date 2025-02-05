@@ -1,4 +1,7 @@
 .entete{
+    font-family: "Poppins", serif;
+    font-style: normal;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,6 +16,10 @@
         gap: 0 40px;
         flex-wrap: wrap;
 
+    }
+
+    &__menu{
+        text-transform: uppercase;
     }
 }
 
