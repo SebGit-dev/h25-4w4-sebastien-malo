@@ -1,3 +1,22 @@
+.burger {
+    display: none;
+    z-index: 3;
+    @media screen and (max-width:$point__rupture) {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+}
+  
+.checkbox__burger {
+    display: none;
+}
+  
+.checkbox__burger:checked ~ .entete__nav {
+    display: flex;
+}
+
 .entete{
     font-family: "Poppins", serif;
     font-style: normal;
@@ -8,14 +27,22 @@
 
     &__nav {
         display: flex;
-        @media screen and (max-width:$point__rupture) {
-            flex-direction: column; 
-        }
         flex-direction: row; 
         align-items: center;
         gap: 0 40px;
         flex-wrap: wrap;
-
+        @media screen and (max-width:$point__rupture) {
+            flex-direction: column; 
+            display: none;
+            width: 100vw;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            gap: 30px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+        }
     }
     &__menu{
         text-transform: uppercase;
@@ -24,5 +51,7 @@
         height: 150px;
     }
 }
+
+
 
 
