@@ -3,9 +3,16 @@
       flex : 1 1 50%;
       display : flex;  
       flex-direction: row;
+<<<<<<< HEAD
       justify-content: flex-end;
       @media screen and (max-width:$point__rupture) {
         flex-direction: column;
+=======
+      justify-content: space-between;
+      @media screen and (max-width:$point__rupture) {
+        flex-direction: column;
+        height: 20vh;
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
       }
     
       margin: 0;
@@ -18,6 +25,12 @@
             color: #333;
             text-decoration: none;
             padding : 2px 5px;
+<<<<<<< HEAD
+=======
+            @media screen and (max-width:$point__rupture) {
+              padding : 2px 5px;
+            }
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
         }
       }
     

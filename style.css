@@ -1,16 +1,27 @@
 @charset "UTF-8";
 /*
+<<<<<<< HEAD
 Theme Name: 4W4 - Eddy Martin
 Theme URI: https://referenced.ca
 Author: Eddy Martin
 Author URI: https://github.com/eddytuto
+=======
+Theme Name: 4W4 - Sebastien Malo
+Theme URI: https://referenced.ca
+Author: Sebastien Malo
+Author URI: https://github.com/SebGit-dev
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
 Description: Thème de base développer dans le cadre du cours 4W4
 Version: 1.0
 Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+<<<<<<< HEAD
 Text Domain: 4w4-eddy
+=======
+Text Domain: 4w4-seb
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
 */
 /* /////////////////////
 Les Variables
@@ -23,7 +34,11 @@ Les composants
   flex: 1 1 50%;
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   justify-content: flex-end;
+=======
+  justify-content: space-between;
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -31,12 +46,17 @@ Les composants
 @media screen and (max-width: 700px) {
   .menu {
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    height: 20vh;
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
   }
 }
 .menu__a {
   color: #333;
   text-decoration: none;
   padding: 2px 5px;
+<<<<<<< HEAD
 }
 
 /* *******************
@@ -73,14 +93,76 @@ Le composant .carte
   background-color: #007bff;
   color: #fff;
   border: none;
+=======
+}
+@media screen and (max-width: 700px) {
+  .menu__a {
+    padding: 2px 5px;
+  }
+}
+
+.carte {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.253);
+}
+.carte__grande {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4%;
+  padding: 10px;
+}
+@media screen and (max-width: 700px) {
+  .carte__grande {
+    flex-direction: column;
+  }
+}
+.carte__contenu {
+  margin: 0;
+  margin-bottom: 1vh;
+  padding-top: 1vh;
+}
+.carte__input {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid rgb(86, 209, 203);
+  color: rgb(142, 142, 142);
+}
+.carte__input:hover {
+  border: 2px solid rgb(86, 209, 203);
+}
+.carte__bouton {
+  height: 3vh;
+  width: 16vh;
+  margin-top: 4vh;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(86, 209, 203);
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
   border-radius: 4px;
   cursor: pointer;
 }
 .carte__bouton--actif {
+<<<<<<< HEAD
   background-color: #0056b3;
 }
 .carte__bouton:hover {
   background-color: #0056b3;
+=======
+  background-color: white;
+}
+.carte__bouton:hover {
+  background-color: rgb(242, 242, 242);
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
 }
 
 .recherche {
@@ -90,6 +172,10 @@ Le composant .carte
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .recherche__input {
+<<<<<<< HEAD
+=======
+  color: rgb(164, 164, 164);
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
   flex: 1;
   height: 1.8rem;
   border: none;
@@ -109,20 +195,124 @@ Le composant .carte
 Layout 
 /////////////////////////// */
 .global {
+<<<<<<< HEAD
   margin: 0 auto;
   max-width: 1000px;
+=======
+  margin-left: 5vw;
+  padding-top: 10vh;
+  max-width: 1000px;
+  font-family: "Poppins", serif;
+  font-style: normal;
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
 }
 
 .hero {
   min-height: 100vh;
   background-image: url("images/maldives.jpg");
 }
+<<<<<<< HEAD
 
 .entete {
+=======
+.hero p {
+  margin: 0px;
+  padding: 0px;
+}
+.hero__titre {
+  width: 80vw;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgb(101, 230, 221);
+}
+.hero__contenu {
+  height: 40vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hero__bouton {
+  width: 120px;
+  height: 40px;
+}
+
+.hero a {
+  text-decoration: none;
+}
+
+.hero a:visited {
+  color: black;
+}
+
+.hero a:hover {
+  color: black;
+}
+
+.hero a:active {
+  color: black;
+}
+
+button {
+  border-color: rgb(80, 184, 184);
+  border-radius: 5px;
+  background-color: rgb(187, 255, 255);
+  width: fit-content;
+}
+
+.galerie {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+}
+.galerie__fig {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1vw;
+  row-gap: 1vw;
+}
+.galerie__fig img {
+  height: 200px;
+}
+
+.burger {
+  display: none;
+  z-index: 3;
+}
+@media screen and (max-width: 700px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.checkbox__burger {
+  display: none;
+}
+
+.checkbox__burger:checked ~ .entete__nav {
+  display: flex;
+}
+
+.entete {
+  font-family: "Poppins", serif;
+  font-style: normal;
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 700px) {
+  .entete {
+    justify-content: space-between;
+  }
+}
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
 .entete__nav {
   display: flex;
   flex-direction: row;
@@ -133,5 +323,25 @@ Layout
 @media screen and (max-width: 700px) {
   .entete__nav {
     flex-direction: column;
+<<<<<<< HEAD
   }
+=======
+    display: none;
+    width: 100vw;
+    height: 30vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    gap: 30px 0;
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    background-color: #fff;
+  }
+}
+.entete__menu {
+  text-transform: uppercase;
+}
+.entete__logo img {
+  height: 150px;
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
 }/*# sourceMappingURL=style.css.map */
