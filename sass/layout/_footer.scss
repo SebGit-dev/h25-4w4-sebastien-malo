@@ -1,0 +1,33 @@
+footer{
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+.piedpage{
+    display: flex;
+    flex-direction: column;
+    &__s1{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        &__externe{
+            flex: 0 0 20%;
+            & .menu{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__adresse{
+            flex: 0 0 40%;
+            // &__coord{
+            
+            // }
+            // &__recherche{
+                
+            // }
+        }
+        &__description{
+                flex:1 ;
+        }
+    }
+}
