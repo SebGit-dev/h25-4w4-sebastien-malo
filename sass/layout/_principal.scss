@@ -1,9 +1,85 @@
 .global {
+<<<<<<< HEAD
    margin : 0 auto;
    max-width: 1000px;
+=======
+    margin-left : 5vw;
+    padding-top: 10vh;
+    max-width: 1000px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
 }
 
 .hero{
     min-height: 100vh;
     background-image: url("images/maldives.jpg");
+<<<<<<< HEAD
+=======
+
+    p{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    &__titre{
+        width: 80vw;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px rgb(101, 230, 221);
+    }
+    
+    &__contenu{
+        height: 40vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__bouton{
+        width: 120px;
+        height: 40px;
+    }
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+.hero a:visited {
+    color: black;
+}
+  
+.hero a:hover {
+    color: black;
+}
+  
+.hero a:active {
+    color: black;
+}
+
+button{
+    border-color: rgb(80, 184, 184);
+    border-radius: 5px;
+    background-color: rgb(187, 255, 255);
+    width: fit-content;
+}
+
+.galerie {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+  
+    &__fig {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 1vw;
+        row-gap: 1vw;
+    }
+    &__fig img {
+        height: 200px;
+    }
+>>>>>>> 322eb562b95acc748bfe6ea0d048948cb7a0e6c2
 }
