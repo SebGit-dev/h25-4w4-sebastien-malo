@@ -18,9 +18,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* /////////////////////////////////
 Les variables
 //////////////////////////////////// */
+/*-----------------------------VARIABLES COULEURS-------------------------------*/
 /* /////////////////////////////////
 Les balise de bases
 //////////////////////////////////// */
+/*-----------------------------SIMPLE-------------------------------*/
 body {
   font-size: 16px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -57,7 +59,7 @@ p {
 /* /////////////////////////////////
 Les composants
 //////////////////////////////////// */
-/* ----------------------------------------- .menu */
+/*-----------------------------MENU-------------------------------*/
 .menu {
   display: flex;
   flex-direction: row;
@@ -74,6 +76,7 @@ Les composants
   padding: 4px;
 }
 
+/*-----------------------------RECHERCHE-------------------------------*/
 .recherche {
   display: flex;
   height: 1.6rem;
@@ -99,6 +102,7 @@ Les composants
   padding: 3px;
 }
 
+/*-----------------------------CARTE-------------------------------*/
 .carte {
   color: white;
   display: flex;
@@ -123,6 +127,7 @@ Les composants
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
+/*-----------------------------GLOBAL-------------------------------*/
 .global {
   max-width: 100vw;
   padding: 10vh 5vw;
@@ -135,6 +140,7 @@ Les layouts
   justify-content: center;
 }
 
+/*-----------------------------ENTETE-------------------------------*/
 .entete {
   display: flex;
   justify-content: space-between;
@@ -160,11 +166,13 @@ Les layouts
   }
 }
 
+/*-----------------------------HERO-------------------------------*/
 .hero {
   background-image: url("images/maldives.jpg");
   min-height: 100vh;
 }
 
+/*-----------------------------FOOTER-------------------------------*/
 footer {
   background-color: rgb(255, 196, 0);
   color: black;
