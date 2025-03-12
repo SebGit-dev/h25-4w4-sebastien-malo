@@ -25,6 +25,44 @@ function theme_tp_customize_register($wp_customize){
       'label' => __('Image en arriere plan', 'theme_tp'),
       'section' => 'hero_section',
   )));
+
+  $wp_customize->add_section('footer_section', array(
+    'title' => __('Footer Section', 'theme_tp'),
+    'priority' => 30,
+  ));
+
+  $wp_customize->add_setting('footer_mission', array(
+    'default' => __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe facere maxime repudiandae libero laboriosam doloremque. Tenetur iure nesciunt iste ducimus in nisi cum fugiat dignissimos totam doloremque pariatur exercitationem tempora earum quia, architecto aliquam esse laboriosam maiores nulla error laudantium, dolorem fuga. Recusandae nihil mollitia ex doloribus laboriosam aliquid.', 'theme_tp'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('footer_mission', array(
+    'label' => __('Mission', 'theme_tp'),
+    'section' => 'footer_section',
+    'type' => 'text',
+  ));
+
+  $wp_customize->add_setting('footer_adresse', array(
+    'default' => __('Siège social, 7373 Boul de la Côte-Vertu, Montréal (Saint-Laurent', 'theme_tp'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('footer_adresse', array(
+    'label' => __('Adresse', 'theme_tp'),
+    'section' => 'footer_section',
+    'type' => 'text',
+  ));
+
+  $wp_customize->add_setting('footer_telephone', array(
+    'default' => __('1 (888) 247-2262', 'theme_tp'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('footer_telephone', array(
+    'label' => __('Numero Telephone', 'theme_tp'),
+    'section' => 'footer_section',
+    'type' => 'text',
+  ));
 }
 
 add_action('customize_register', 'theme_tp_customize_register');
