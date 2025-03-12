@@ -1,9 +1,5 @@
     <?php get_header(); ?>
     <!-- <h1>-------- FRONT-PAGE.PHP ----------</h1> -->
-     <?php 
-    $hero_auteur = get_theme_mod('hero_auteur', 'Sebastien Malo');
-    $hero_background = get_theme_mod('hero_background', '');
-    ?>
     <?php get_template_part( 'gabarits/hero' ); ?>
     <section class="populaire">
         <div class="global">

@@ -1,5 +1,8 @@
 <?php
 function theme_tp_customize_register($wp_customize){
+
+    // ----------------------- Section Hero --------------------------
+
   $wp_customize->add_section('hero_section', array(
     'title' => __('Hero Section', 'theme_tp'),
     'priority' => 30,
@@ -25,6 +28,32 @@ function theme_tp_customize_register($wp_customize){
       'label' => __('Image en arriere plan', 'theme_tp'),
       'section' => 'hero_section',
   )));
+
+  $wp_customize->add_setting('hero_courriel', array(
+    'default' => __('admin@gftnth00.mywhc.ca', 'theme_tp'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('hero_courriel', array(
+    'label' => __('Courriel', 'theme_tp'),
+    'section' => 'hero_section',
+    'type' => 'text',
+  ));
+
+  $wp_customize->add_setting('hero_color_text', array(
+    'default' => '',
+    'transport' => 'refresh',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_color_text', array(
+      'label' => __('Coleur des textes', 'theme_tp'),
+      'section' => 'hero_section',
+      'settings' => 'hero_color_text'
+  )));
+
+  
+
+// ----------------------- Section Footer --------------------------
 
   $wp_customize->add_section('footer_section', array(
     'title' => __('Footer Section', 'theme_tp'),
