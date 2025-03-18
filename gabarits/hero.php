@@ -13,7 +13,10 @@
             <?php bloginfo('admin_email') ?>
         </p>
         <p class="hero__adresse">
-            5800 Sherbrooke-est - Montréal (Québec) H1X 2A2
+            Romeo Vachon Blvd N Arrivées, Dorval, Quebec H4Y 1H1
+        </p>
+        <p class="hero__telephone">
+            +1 800-465-1213
         </p>
         <p><?php echo $hero_auteur ?></p>
         <?php get_template_part( 'gabarits/icones' ); ?>
