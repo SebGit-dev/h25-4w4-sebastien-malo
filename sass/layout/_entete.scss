@@ -14,12 +14,12 @@
             flex-direction: column; 
             width : 100vw;
         }
-        width : auto;
+        width : 50vw;
         position : static;
         flex-direction: row; 
         background-color: transparent;
         display: flex;
-        align-items: center;       
+        align-items: center;   
     }
     &__logo img{
         width: 10vw;

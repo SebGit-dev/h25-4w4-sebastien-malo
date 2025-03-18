@@ -12,17 +12,17 @@
     background-color: #eaf6ff;
 }
 
-article{
+.single_post{
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-article h2{
+.single_post h2{
     padding-bottom: 5px;
 }
-article div{
+.single_post div{
     display: flex;
     justify-content: center;
     align-items: center;

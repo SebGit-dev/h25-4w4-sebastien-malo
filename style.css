@@ -20,7 +20,7 @@ Les variables
 //////////////////////////////////// */
 /*-----------------------------VARIABLES COULEURS-------------------------------*/
 /* /////////////////////////////////
-Les balise de bases
+Les balise de basess
 //////////////////////////////////// */
 /*-----------------------------SIMPLE-------------------------------*/
 body {
@@ -123,7 +123,72 @@ Les composants
 }
 .carte__contenu {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
+.carte__contenu__infos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.carte__contenu__infos div {
+  margin-right: 4vw;
+}
+.carte__bouton {
+  background-color: rgb(255, 255, 255);
+  color: rgb(33, 53, 126);
+  align-self: flex-end;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-color: white;
+  border-width: medium;
+  border-style: solid;
+  box-shadow: rgb(255, 255, 255) 0px 10px 30px -10px;
+}
+.carte h4 {
+  color: #ffffff;
+  background-color: rgba(0, 159, 255, 0);
+  border-radius: 10px;
+  padding: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1490196078);
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 13px 27px -5px, rgba(0, 0, 0, 0.05) 0px 8px 16px -8px;
+}
+
+.post-categories {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.post-categories a {
+  text-decoration: none;
+  color: rgb(221, 244, 255);
+  font-weight: bold;
+  background-color: #4b5eb7;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.type_temperature {
+  display: flex;
+  flex-direction: row;
+}
+
+.type_temperature p {
+  margin: 0 1vw 0 0;
+  background-color: #a4c0f3;
+  color: #2c4b85;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
@@ -141,7 +206,7 @@ Les layouts
   background-color: #eaf6ff;
 }
 
-article {
+.single_post {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -149,11 +214,11 @@ article {
   flex-direction: column;
 }
 
-article h2 {
+.single_post h2 {
   padding-bottom: 5px;
 }
 
-article div {
+.single_post div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,7 +233,7 @@ article div {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .entete__navigation {
-  width: auto;
+  width: 50vw;
   position: static;
   flex-direction: row;
   background-color: transparent;
