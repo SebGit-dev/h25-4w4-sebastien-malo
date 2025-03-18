@@ -138,6 +138,26 @@ Les layouts
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #eaf6ff;
+}
+
+article {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+article h2 {
+  padding-bottom: 5px;
+}
+
+article div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*-----------------------------ENTETE-------------------------------*/
