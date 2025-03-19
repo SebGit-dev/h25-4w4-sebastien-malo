@@ -18,7 +18,7 @@
         <p class="hero__telephone">
             +1 800-465-1213
         </p>
-        <p><?php echo $hero_auteur ?></p>
+        <p>Sebastien Malo</p>
         <?php get_template_part( 'gabarits/icones' ); ?>
     </div>
 </section>
