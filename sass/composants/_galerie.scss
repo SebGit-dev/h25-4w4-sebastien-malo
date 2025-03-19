@@ -1,3 +1,15 @@
 .galerie{
     
 }
+
+.wp-block-gallery img{
+    border-radius: 10px;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before{
+    border-radius: 10px;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption{
+    border-radius: 10px;
+}

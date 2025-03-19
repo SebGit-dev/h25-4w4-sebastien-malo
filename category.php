@@ -1,7 +1,9 @@
     <?php get_header(); ?>
     <!-- <h1>-------- CATEGORY.PHP ----------</h1> -->
-    <?php single_cat_title(); ?>
-    <p> <?php echo category_description() ?></p>
+    <section class="section__titre">
+        <h2><?php single_cat_title(); ?></h2>
+        <p><?php echo category_description(); ?></p>
+    </section>
     <section class="populaire">
         <div class="global">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

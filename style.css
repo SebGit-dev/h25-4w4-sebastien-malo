@@ -146,6 +146,7 @@ Les composants
   box-shadow: rgb(255, 255, 255) 0px 10px 30px -10px;
 }
 .carte h4 {
+  font-weight: initial;
   color: #ffffff;
   background-color: rgba(0, 159, 255, 0);
   border-radius: 10px;
@@ -189,6 +190,18 @@ Les composants
   font-weight: bold;
 }
 
+.wp-block-gallery img {
+  border-radius: 10px;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before {
+  border-radius: 10px;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+  border-radius: 10px;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
@@ -206,6 +219,7 @@ Les layouts
   background-color: #eaf6ff;
 }
 
+/*-----------------------------SINGLE POST-------------------------------*/
 .single_post {
   width: 60%;
   display: flex;
@@ -225,15 +239,36 @@ Les layouts
   flex-direction: column;
 }
 
+/*-----------------------------SECTION TITRE-------------------------------*/
+.section__titre {
+  background-color: #eaf6ff;
+  color: #094a84;
+}
+
+.section__titre h2 {
+  margin: 0px;
+  padding: 3vh 6.2vw;
+}
+
+.section__titre p {
+  margin: 0;
+  padding: 0vh 6.2vw;
+}
+
+/*-----------------------------SEARCH-------------------------------*/
+.site__main {
+  height: 100vh;
+}
+
 /*-----------------------------ENTETE-------------------------------*/
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: white;
 }
 .entete__navigation {
-  width: 50vw;
   position: static;
   flex-direction: row;
   background-color: transparent;
@@ -265,6 +300,9 @@ Les layouts
 .hero {
   min-height: 100vh;
   background-image: linear-gradient(90deg, rgba(0, 100, 205, 0.8), rgba(0, 212, 255, 0.2)), url("images/maldives.jpg");
+}
+.hero__icone img {
+  color: white;
 }
 
 /*-----------------------------FOOTER-------------------------------*/

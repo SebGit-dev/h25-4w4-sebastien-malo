@@ -92,6 +92,18 @@ function theme_tp_customize_register($wp_customize){
     'section' => 'footer_section',
     'type' => 'text',
   ));
+
+  
+  $wp_customize->add_setting('footer_courriel', array(
+    'default' => __('admin@gftnth00.mywhc.ca', 'theme_tp'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('footer_courriel', array(
+    'label' => __('Courriel', 'theme_tp'),
+    'section' => 'footer_section',
+    'type' => 'text',
+  ));
 }
 
 add_action('customize_register', 'theme_tp_customize_register');

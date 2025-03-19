@@ -1,6 +1,7 @@
 <?php $footer_mission = get_theme_mod('footer_mission', ''); ?>
 <?php $footer_adresse = get_theme_mod('footer_adresse', ''); ?>
 <?php $footer_telephone = get_theme_mod('footer_telephone', ''); ?>
+<?php $footer_courriel = get_theme_mod('footer_courriel', ''); ?>
 
 <footer>
     <div class="piedpage global">
@@ -23,6 +24,11 @@
             </div>
             <div class="piedpage__s1__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe facere maxime repudiandae libero laboriosam doloremque. Tenetur iure nesciunt iste ducimus in nisi cum fugiat dignissimos totam doloremque pariatur exercitationem tempora earum quia, architecto aliquam esse laboriosam maiores nulla error laudantium, dolorem fuga. Recusandae nihil mollitia ex doloribus laboriosam aliquid.
+            </div>
+            <div class="piedpage__s1__infos">
+                <p><?php echo $footer_adresse ?></p>
+                <p><?php echo $footer_telephone ?></p>
+                <p><?php echo $footer_courriel ?></p>
             </div>
         </section>
     </div>

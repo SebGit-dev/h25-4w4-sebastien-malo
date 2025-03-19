@@ -12,6 +12,8 @@
     background-color: #eaf6ff;
 }
 
+/*-----------------------------SINGLE POST-------------------------------*/
+
 .single_post{
     width: 60%;
     display: flex;
@@ -28,3 +30,27 @@
     align-items: center;
     flex-direction: column;
 }
+
+/*-----------------------------SECTION TITRE-------------------------------*/
+
+.section__titre{
+    background-color: #eaf6ff;
+    color: #094a84;
+}
+
+.section__titre h2{
+    margin: 0px;
+    padding: 3vh 6.2vw;
+}
+
+.section__titre p{
+    margin: 0;
+    padding: 0vh 6.2vw;
+}
+
+/*-----------------------------SEARCH-------------------------------*/
+
+.site__main{
+    height: 100vh;
+}
+
