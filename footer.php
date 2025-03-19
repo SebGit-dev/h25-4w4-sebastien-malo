@@ -16,19 +16,21 @@
             </div>
             <div class="piedpage__s1__adresse">
                 <div class="piedpage__s1__adresse__coord">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, id.
+                    Recherche de pays a visiter
                 </div>
                 <div class="piedpage__s1__adresse__recherche">
                     <?php get_search_form(); ?>
                 </div>
             </div>
-            <div class="piedpage__s1__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe facere maxime repudiandae libero laboriosam doloremque. Tenetur iure nesciunt iste ducimus in nisi cum fugiat dignissimos totam doloremque pariatur exercitationem tempora earum quia, architecto aliquam esse laboriosam maiores nulla error laudantium, dolorem fuga. Recusandae nihil mollitia ex doloribus laboriosam aliquid.
-            </div>
             <div class="piedpage__s1__infos">
-                <p><?php echo $footer_adresse ?></p>
-                <p><?php echo $footer_telephone ?></p>
-                <p><?php echo $footer_courriel ?></p>
+                <p>Siège social, 7373 Boul de la Côte-Vertu, Montréal (Saint-Laurent)</p>
+                <p>1 (888) 247-2262</p>
+                <p>admin@gftnth00.mywhc.ca</p>
+            </div>
+            <div class="piedpage__s1__description">
+            Notre mission est d’inspirer et de faciliter l’organisation de voyages inoubliables en offrant une plateforme intuitive et complète. Nous aidons les voyageurs à découvrir des destinations de rêve, à comparer les meilleures offres et à réserver facilement des hébergements, activités et transports.
+            Grâce à des recommandations personnalisées, des avis authentiques et des guides détaillés, nous accompagnons chaque voyageur dans la création d’une expérience sur mesure, qu’il s’agisse d’une escapade relaxante, d’une aventure exaltante ou d’un séjour en famille.
+            Nous nous engageons à rendre les vacances accessibles, agréables et sans stress, en proposant un service fiable et transparent, afin que chaque voyage devienne un souvenir mémorable.
             </div>
         </section>
     </div>

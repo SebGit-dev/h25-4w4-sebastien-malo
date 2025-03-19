@@ -226,10 +226,15 @@ Les layouts
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 2vw;
+  border-radius: 10px;
 }
 
 .single_post h2 {
   padding-bottom: 5px;
+  color: #094a84;
 }
 
 .single_post div {
@@ -257,7 +262,26 @@ Les layouts
 
 /*-----------------------------SEARCH-------------------------------*/
 .site__main {
-  height: 100vh;
+  min-height: 100vh;
+  background-color: #eaf6ff;
+}
+
+.site__main article {
+  margin: 0 10vw 0 10vw;
+  padding-bottom: 4vh;
+}
+
+.site__main h5 {
+  padding-top: 5vh;
+  margin: 0px;
+}
+
+.site__main a {
+  color: #094a84;
+}
+
+.site__main hr {
+  margin: 0px;
 }
 
 /*-----------------------------ENTETE-------------------------------*/
@@ -333,7 +357,7 @@ footer a {
   flex-direction: column;
 }
 .piedpage__s1__adresse {
-  flex: 0 0 40%;
+  flex: 0 0 20%;
 }
 .piedpage__s1__description {
   flex: 1;
