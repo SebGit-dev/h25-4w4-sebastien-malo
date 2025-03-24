@@ -301,13 +301,17 @@ Les layouts
 }
 @media screen and (max-width: 800px) {
   .entete__navigation {
+    flex-direction: column;
+    display: none;
+    width: 100vw;
+    height: 30vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    gap: 30px 0;
     position: absolute;
-    top: 0;
+    top: 20vh;
     right: 0;
     background-color: #fff;
-    padding: 20px;
-    flex-direction: column;
-    width: 100vw;
   }
 }
 .entete__logo img {
@@ -318,6 +322,27 @@ Les layouts
 .entete a {
   color: #254f9d;
   font-weight: bold;
+}
+
+.burger {
+  display: none;
+  z-index: 3;
+}
+@media screen and (max-width: 800px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+  }
+}
+
+.checkbox__burger {
+  display: none;
+}
+
+.checkbox__burger:checked ~ .entete__nav {
+  display: flex;
 }
 
 /*-----------------------------HERO-------------------------------*/

@@ -18,6 +18,12 @@
                     }
                 ?>
             </figure>
+
+            <label for="checkbox__burger" class="burger">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu" alt="bouton burger" width="32" height="32">
+            </label>
+            <input type="checkbox" id="checkbox__burger" class="checkbox__burger"> </input>
+
             <div class="entete__navigation">
                 <?php wp_nav_menu(array(
                     'menu' => 'principal',
