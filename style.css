@@ -285,8 +285,34 @@ Les layouts
 }
 
 /*-----------------------------404-------------------------------*/
-.error__img img {
+.error {
+  background-color: #eaf6ff;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
   width: 100vw;
+}
+
+.error__main {
+  color: #254f9d;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__img {
+  width: 50%;
+  background-color: #00b0ff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 5vw;
+}
+
+.error__img img {
+  width: 100%;
 }
 
 /*-----------------------------ENTETE-------------------------------*/

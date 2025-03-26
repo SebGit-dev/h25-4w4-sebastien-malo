@@ -1,7 +1,18 @@
 <?php get_header(); ?>
     <!-- <h1>-------- 404.PHP ----------</h1> -->
-    <figure class="error__img">
-        <!-- J'ai fait l'image dans Photoshop -->
-        <img src="https://gftnth00.mywhc.ca/4w4_18/wp-content/uploads/2025/03/404-travel-2.jpg-4.png" alt="404">
-    </figure>
+    <div class="error">
+        <div class="error__main">
+            <h3>Tellement désolé</h3>
+            <h4>La page que vous recherchez est introuvable</h4>
+            <h6>Raisons possibles</h6>
+            <ul>
+                <li>L'adresse a peut-être été mal saisie</li>
+                <li>Il se peut que le lien soit rompu ou obsolète</li>
+            </ul>
+            <?php get_template_part( 'gabarits/icones' ); ?>
+        </div>
+        <div class="error__image">
+            <img src="images/404.png" alt="404">
+        </div>
+    </div>
 <?php get_footer(); ?>
