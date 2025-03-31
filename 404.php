@@ -5,10 +5,20 @@
 
 <?php get_header(); ?>
     <!-- <h1>-------- 404.PHP Moncerrat----------</h1> -->
-    <div class="erreur" style="background-image: url(<?php echo $erreur_background ?>); color: <?php echo $erreur_color_text ?>;">
-        <h1 class="erreur__titre"><?php echo $$erreur_titre ?></h1>
-        <p class="erreur__description"><?php echo $$erreur_description ?></p>
-        <div class="erreur__retour_menu"></div>
-        <div class="erreur__menu"></div>
+    <div class="erreur_general" style="background-image: url(<?php echo $erreur_background ?>); color: <?php echo $erreur_color_text ?>;">
+        <div class="erreur">
+            <h1 class="erreur__titre"><?php echo $erreur_titre ?></h1>
+            <p class="erreur__description"><?php echo $erreur_description ?></p>
+            <div class="erreur__retour_menu">
+                <a href="index.php">Retour a l'accueil</a>
+            </div>
+            <div class="erreur__menu">
+            <?php wp_nav_menu(array(
+                        "menu" => "erreur",
+                        "container" => "nav",
+                    ));
+                ?>
+            </div>
+        </div>
     </div>
 <?php get_footer(); ?>
