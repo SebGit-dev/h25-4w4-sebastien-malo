@@ -299,7 +299,8 @@ Les layouts
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  padding: 5vw;
 }
 
 .error__img {
@@ -307,12 +308,17 @@ Les layouts
   background-color: #00b0ff;
   display: flex;
   justify-content: center;
-  align-items: start;
-  padding: 5vw;
+  align-items: center;
 }
 
 .error__img img {
   width: 100%;
+}
+
+.error__main div {
+  background-color: #cdeaff;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 /*-----------------------------ENTETE-------------------------------*/
