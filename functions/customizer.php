@@ -104,6 +104,68 @@ function theme_tp_customize_register($wp_customize){
     'section' => 'footer_section',
     'type' => 'text',
   ));
+
+// ----------------------- Section erreur --------------------------
+
+// Erreur Section
+
+$wp_customize->add_section('erreur_section', array(
+  'title' => __('Erreur Section', 'theme_tp'),
+  'priority' => 30,
+));
+
+// Erreur Titre
+
+$wp_customize->add_setting('erreur_titre', array(
+  'default' => __("Oops vous avez echoue sur l'ile 404!", 'theme_tp'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
+
+$wp_customize->add_control('erreur_titre', array(
+  'label' => __('Titre', 'theme_tp'),
+  'section' => 'erreur_section',
+  'type' => 'text',
+));
+
+// Erreur Description
+
+$wp_customize->add_setting('erreur_description', array(
+  'default' => __("Pas de panique, cher membre explorateur ! Vous avez dérivé un peu trop loin des destinations de rêve que notre club a soigneusement sélectionnées pour vous. Reprenez votre périple en cliquant sur 'Accueil' pour découvrir à nouveau nos voyages d'exception !", 'theme_tp'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
+
+$wp_customize->add_control('erreur_description', array(
+  'label' => __('Description', 'theme_tp'),
+  'section' => 'erreur_section',
+  'type' => 'text',
+));
+
+// Erreur Couleur Text
+
+$wp_customize->add_setting('erreur_color_text', array(
+  'default' => '',
+  'transport' => 'refresh',
+));
+
+$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'erreur_color_text', array(
+    'label' => __('Coleur des textes', 'theme_tp'),
+    'section' => 'erreur_section',
+    'settings' => 'erreur_color_text'
+)));
+
+// Erreur Background
+
+$wp_customize->add_setting('erreur_background', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
+
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'erreur_background', array(
+    'label' => __('Image en arriere plan', 'theme_tp'),
+    'section' => 'erreur_section',
+)));
+
+
 }
 
 add_action('customize_register', 'theme_tp_customize_register');
