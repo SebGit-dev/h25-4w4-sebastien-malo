@@ -202,6 +202,28 @@ Les composants
   border-radius: 10px;
 }
 
+.destination {
+  width: 100%;
+  background-color: #eaf6ff;
+}
+
+.categorie__ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: #eaf6ff;
+  margin: 0px;
+  padding: 20px;
+}
+
+.categorie__ul li {
+  color: white;
+  margin-right: 1vw;
+  background-color: rgb(49, 92, 138);
+  padding: 1vw;
+  border-radius: 10px;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
