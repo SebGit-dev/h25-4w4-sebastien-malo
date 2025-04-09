@@ -1,5 +1,4 @@
 const categorie__ul__li = document.querySelectorAll(".categorie__ul__li");
-const categoryTitre = document.querySelector(".destination__titre");
 const destinationList = document.querySelector('.destination__list');
 
 categoryTitre.innerHTML = "";
@@ -9,9 +8,6 @@ for (const element of categorie__ul__li) {
 }
 
 function getDestination(event) {
-    categorie__ul__li.forEach(el => el.classList.remove("active"));
-    event.currentTarget.classList.add("active");
-
     console.log(event.target);
     const categoryId = event.target.getAttribute("data-categoryID");
     const domaine = window.location.href;
@@ -22,15 +18,21 @@ function getDestination(event) {
         .then(response => response.json())
         .then(data => {
             categoryTitre.innerHTML = `Articles de la section ${(event.target.innerHTML).toLowerCase()}`
+            const categoryTitre = document.querySelector(".destination__titre");
             destinationList.innerHTML = "";
             data.forEach(article => {
                 const articleElement = document.createElement('div');
+                articleElement.classList.add(".SpecificDestination__div");
                 articleElement.innerHTML = `
                     <h3>${article.title.rendered}</h3>
-                    <div>${article.excerpt.rendered}</div>
+                    ${article.excerpt.rendered}
                     <a href="${article.link}">Lire plus</a>
                 `;
                 destinationList.appendChild(articleElement);
+
+                articleElement.addEventListener("click", () =>{
+                    articleElement.classList.toggle("show")
+                })
             });
         })
         .catch(error => console.error('Erreur lors de la récupération des articles:', error));
