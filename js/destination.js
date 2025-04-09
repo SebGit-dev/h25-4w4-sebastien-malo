@@ -27,13 +27,8 @@ function getDestination(event) {
                     <label class="destination_label for="rad-${article.excerpt.rendered}"><img src="/show/345223/three-dots-vertical.svg" alt=""></h3>
                     <input type="radio" id="rad-${article.id}" name="destination" classe="destination_rad">
                     <a href="${article.link}">Lire plus</a>
-                    
                 `;
                 destinationList.appendChild(articleElement);
-
-                articleElement.addEventListener("click", () =>{
-                    articleElement.classList.toggle("show")
-                })
             });
         })
         .catch(error => console.error('Erreur lors de la récupération des articles:', error));
