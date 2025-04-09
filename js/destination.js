@@ -1,11 +1,17 @@
 const categorie__ul__li = document.querySelectorAll(".categorie__ul__li");
 const categoryTitre = document.querySelector(".destination__titre");
+const destinationList = document.querySelector('.destination__list');
+
 categoryTitre.innerHTML = "";
+
 for (const element of categorie__ul__li) {
-    element.addEventListener("click", fetchStuff)
+    element.addEventListener("click", getDestination)
 }
 
-function fetchStuff(event) {
+function getDestination(event) {
+    categorie__ul__li.forEach(el => el.classList.remove("active"));
+    event.currentTarget.classList.add("active");
+
     console.log(event.target);
     const categoryId = event.target.getAttribute("data-categoryID");
     const domaine = window.location.href;
@@ -16,7 +22,6 @@ function fetchStuff(event) {
         .then(response => response.json())
         .then(data => {
             categoryTitre.innerHTML = `Articles de la section ${(event.target.innerHTML).toLowerCase()}`
-            const destinationList = document.querySelector('.destination__list');
             destinationList.innerHTML = "";
             data.forEach(article => {
                 const articleElement = document.createElement('div');
