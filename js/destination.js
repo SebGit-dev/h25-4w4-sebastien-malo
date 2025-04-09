@@ -22,11 +22,12 @@ function getDestination(event) {
             destinationList.innerHTML = "";
             data.forEach(article => {
                 const articleElement = document.createElement('div');
-                articleElement.classList.add(".SpecificDestination__div");
                 articleElement.innerHTML = `
                     <h3>${article.title.rendered}</h3>
-                    ${article.excerpt.rendered}
+                    <label class="destination_label for="rad-${article.excerpt.rendered}"><img src="/show/345223/three-dots-vertical.svg" alt=""></h3>
+                    <input type="radio" id="rad-${article.id}" name="destination" classe="destination_rad">
                     <a href="${article.link}">Lire plus</a>
+                    
                 `;
                 destinationList.appendChild(articleElement);
 
