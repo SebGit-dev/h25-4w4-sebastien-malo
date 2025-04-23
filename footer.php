@@ -2,7 +2,9 @@
 <?php $footer_adresse = get_theme_mod('footer_adresse', ''); ?>
 <?php $footer_telephone = get_theme_mod('footer_telephone', ''); ?>
 <?php $footer_courriel = get_theme_mod('footer_courriel', ''); ?>
-
+<?php 
+genere_vague();
+?>
 <footer>
     <div class="piedpage global">
         <section class="piedpage__s1">
