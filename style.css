@@ -206,6 +206,10 @@ Les composants
   width: 100%;
   background-color: #eaf6ff;
 }
+.destination__titre {
+  margin: 0px;
+  padding: 0px;
+}
 
 .categorie__ul {
   display: flex;
@@ -228,6 +232,10 @@ Les composants
 Les layouts
 //////////////////////////////////// */
 /*-----------------------------GLOBAL-------------------------------*/
+body {
+  background-color: #eaf6ff;
+}
+
 .global {
   max-width: 100vw;
   padding: 10vh 5vw;
@@ -539,4 +547,35 @@ footer a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.hero__animation {
+  display: none;
+}
+.hero__animation.actif {
+  display: block;
+}
+.hero__animation.actif .hero__titre, .hero__animation.actif .hero__description {
+  position: relative;
+  animation: contenu linear 1s forwards;
+}
+
+.hero__titre {
+  transform: translateX(-1000px);
+}
+
+.hero__description {
+  transform: translateX(-1000px);
+  animation-delay: 2s;
+}
+
+@keyframes contenu {
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.waveFooter {
+  background-color: rgb(234, 246, 255);
+  position: relative;
+  top: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,10 @@
 .destination{
     width: 100%;
     background-color: #eaf6ff;
+    &__titre{
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
 .categorie__ul{

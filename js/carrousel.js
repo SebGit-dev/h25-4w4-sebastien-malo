@@ -2,6 +2,7 @@
 
     let hero__radio__input = document.querySelectorAll(".hero__radio__input")
     let hero__caroussels = document.querySelectorAll(".hero__carrousel");
+    let hero__animation = document.querySelectorAll(".hero__animation");
     let indexBackgroundImage = 0;
     const totalBackgroundImage = hero__radio__input.length;
     console.log(hero__caroussels);
@@ -9,8 +10,10 @@
     function changeBackgroundImage(index){
         hero__radio__input[index].checked = true;
         hero__caroussels.forEach(c => c.classList.remove("actif"));
+        hero__animation.forEach(c => c.classList.remove("actif"));
         if (hero__caroussels[index]) {
             hero__caroussels[index].classList.add("actif");
+            hero__animation[index].classList.add("actif");
         }
     }
 
