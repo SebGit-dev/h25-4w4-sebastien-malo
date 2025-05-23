@@ -14,11 +14,11 @@ get_header();
                     <article>
                         <h2><?php the_title(); ?></h2>
                         <h6>Date:
-                        <?php the_field('date'); ?></h6>
+                        <?php the_field('date_pagepays'); ?></h6>
                         <h6>Coordonnées du site:
-                        <?php the_field('coordonnees_pays'); ?></h6>
+                        <?php the_field('coordonnees_pagepays'); ?></h6>
                         <h6>conférencier du site:
-                        <?php the_field('conferencier'); ?></h6>
+                        <?php the_field('conferencier_pagepays'); ?></h6>
                         <div><?php the_content(); ?></div>
                     </article>
             <?php endwhile;
