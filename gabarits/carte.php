@@ -19,9 +19,9 @@
       <div>
       <h4>Temperatures</h4>
         <div class="type_temperature">
-          <p>Max: <?php the_field('temperature_maximum');?> C</p>
-          <p>Min: <?php the_field('temperature_maximum');?> C</p>
-          <p>Moy: <?php the_field('temperature_maximum');?> C</p>
+          <p>Max: <?= single_post_temperature('temperature_maximum', 25, 40); ?> C&#176;</p>
+          <p>Min: <?= single_post_temperature('temperature_minimum', 0, 25); ?> C&#176;</p>
+          <p>Moy: <?= single_post_temperature('temperature_moyenne', 10, 30); ?> C&#176;</p>
         </div>
       </div>
     </div>
