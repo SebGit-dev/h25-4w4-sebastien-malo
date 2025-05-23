@@ -23,29 +23,51 @@
                     <p class="hero__description">
                         <?php bloginfo('description') ?>
                     </p>
-                </div>
-                <div class="hero__animation">
-                    <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
-                    <p class="hero__description">
-                        <?php bloginfo('description') ?>
+                    <p class="hero__courriel">
+                        <?php bloginfo('admin_email') ?>
                     </p>
-                </div>
-                <div class="hero__animation">
-                    <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
-                    <p class="hero__description">
-                        <?php bloginfo('description') ?>
+                    <p class="hero__adresse">
+                        Romeo Vachon Blvd N Arrivées, Dorval, Quebec H4Y 1H1
                     </p>
-                </div>
-                <p class="hero__courriel">
-                    <?php bloginfo('admin_email') ?>
-                </p>
-                <p class="hero__adresse">
-                    Romeo Vachon Blvd N Arrivées, Dorval, Quebec H4Y 1H1
-                </p>
-                <p class="hero__telephone">
-                    +1 800-465-1213
-                </p>
-                <p>Sebastien Malo</p>
+                    <p class="hero__telephone">
+                        +1 800-465-1213
+                    </p>
+                    <p>Sebastien Malo</p>
                 <?php get_template_part( 'gabarits/icones' ); ?>
+                </div>
+                <div class="hero__animation">
+                    <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
+                    <p class="hero__description">
+                        <?php bloginfo('description') ?>
+                    </p>
+                    <p class="hero__courriel">
+                        <?php bloginfo('admin_email') ?>
+                    </p>
+                    <p class="hero__adresse">
+                        Romeo Vachon Blvd N Arrivées, Dorval, Quebec H4Y 1H1
+                    </p>
+                    <p class="hero__telephone">
+                        +1 800-465-1213
+                    </p>
+                    <p>Sebastien Malo</p>
+                <?php get_template_part( 'gabarits/icones' ); ?>
+                </div>
+                <div class="hero__animation">
+                    <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
+                    <p class="hero__description">
+                        <?php bloginfo('description') ?>
+                    </p>
+                    <p class="hero__courriel">
+                        <?php bloginfo('admin_email') ?>
+                    </p>
+                    <p class="hero__adresse">
+                        Romeo Vachon Blvd N Arrivées, Dorval, Quebec H4Y 1H1
+                    </p>
+                    <p class="hero__telephone">
+                        +1 800-465-1213
+                    </p>
+                    <p>Sebastien Malo</p>
+                    <?php get_template_part( 'gabarits/icones' ); ?>
+                </div>
             </div>
         </section>

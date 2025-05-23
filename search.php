@@ -4,9 +4,19 @@
  */
 get_header();
 ?>
-<!-- <h1>-------- SEARCH.PHP ----------</h1> -->
 <main class="site__main">
     <section class="recherche__section">
+        <?php
+        global $wp_query;
+        $total_results = $wp_query->found_posts;
+        ?>
+        
+        <h2>
+            <?php if ($total_results > 0): ?>
+                <?php echo $total_results; ?> résultat<?php echo ($total_results > 1) ? 's' : ''; ?> trouvé<?php echo ($total_results > 1) ? 's' : ''; ?> pour "<em><?php echo get_search_query(); ?></em>"
+            <?php endif; ?>
+        </h2>
+
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                 <article>
@@ -16,7 +26,7 @@ get_header();
                 </article>
             <?php endwhile; ?>
         <?php else : ?>
-            <p>Aucun résultat trouvé.</p>
+            <p>Aucun résultat trouvé pour "<em><?php echo get_search_query(); ?></em>".</p>
         <?php endif; ?>
     </section>
 </main>
