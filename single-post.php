@@ -10,6 +10,10 @@
             ?>
                 <h2><?php the_title(); ?></h2>
                 <div><?php the_content() ?>
+                <div class="single_post__categorie">
+                    <h6 class="single_post__categorie__titre">Catégories: </h6>
+                    <?= the_category(); ?>
+                </div>
                 <div class="single_post_temperature">
                     <p>Temperature maximum: <?php the_field('temperature_maximum');?> C&#176;</p>
                     <p>Temperature minimum: <?php the_field('temperature_minimum');?> C&#176;</p>
