@@ -589,4 +589,17 @@ footer a {
 
 .site__main hr {
   margin: 0px;
+}
+
+.destination__pays {
+  background-color: rgb(137, 204, 255);
+}
+
+.destination__pays .categorie__ul {
+  padding-top: 5vh;
+}
+
+.destination__pays__titre {
+  margin: 0;
+  padding: 5vw;
 }/*# sourceMappingURL=style.css.map */
