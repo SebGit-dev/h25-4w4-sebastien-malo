@@ -4,9 +4,12 @@
 <?php $footer_courriel = get_theme_mod('footer_courriel', ''); ?>
 <?php $footer_destination_titre = get_theme_mod('footer_destination_titre', ''); ?>
 <?php $footer_destination_img = get_theme_mod('footer_destination_img', ''); ?>
+<?php $footer_wave_color = get_theme_mod('footer_wave_color', 'ffffff'); ?>
+
 <?php 
-genere_vague();
+genere_vague($footer_wave_color);
 ?>
+
 <footer>
     <div class="piedpage global">
         <section class="piedpage__s1">

@@ -1,3 +1,5 @@
+<?php $rest_api_wave_color = get_theme_mod('rest_api_wave_color', 'ffffff'); ?>
+
 <?php
 /*
 Template Name: Template Pays
@@ -18,7 +20,7 @@ get_header();
 </section>
 
 <?php 
-genere_vague();
+genere_vague($rest_api_wave_color);
 ?>
  
 <!-- Rest API -->
@@ -27,6 +29,7 @@ genere_vague();
     <h2 class="destination__pays__titre">Destinations du Pays</h2>
     <div class="destination__pays__list"></div>
 </section>
+
 <?php get_footer(); ?>
 
 
