@@ -7,7 +7,7 @@
 <?php $footer_wave_color = get_theme_mod('footer_wave_color', 'ffffff'); ?>
 
 <?php 
-genere_vague($footer_wave_color);
+genere_vague("#2C8AD1", "#334B9B");
 ?>
 
 <footer>

@@ -608,6 +608,10 @@ footer a {
   margin: 0px;
 }
 
+.destination {
+  background-color: rgb(44, 138, 209);
+}
+
 .destination__pays {
   background-color: rgb(137, 204, 255);
 }

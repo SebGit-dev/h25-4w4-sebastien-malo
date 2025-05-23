@@ -1,4 +1,5 @@
-<?php $rest_api_wave_color = get_theme_mod('rest_api_wave_color', 'ffffff'); ?>
+<?php $couleur_haut = get_theme_mod('couleur_haut', 'ffffff'); ?>
+<?php $couleur_bas = get_theme_mod('couleur_bas', 'ffffff'); ?>
 
 <?php
 /*
@@ -27,7 +28,7 @@ get_header();
     </section>
 
     <?php 
-    genere_vague($rest_api_wave_color);
+    genere_vague("#eaf6ff", "#2C8AD1");
     ?>
     
     <!-- Rest API -->

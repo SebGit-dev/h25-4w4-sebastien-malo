@@ -146,26 +146,26 @@ function theme_tp_customize_register($wp_customize){
     'priority' => 30,
   ));
 
-  $wp_customize->add_setting('rest_api_wave_color', array(
+  $wp_customize->add_setting('couleur_haut', array(
     'default' => '',
     'transport' => 'refresh',
   ));
 
-  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'rest_api_wave_color', array(
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'couleur_haut', array(
       'label' => __('Couleur de la vague du haut', 'theme_tp'),
       'section' => 'pays_section',
-      'settings' => 'rest_api_wave_color'
+      'settings' => 'couleur_haut'
   )));
 
-  $wp_customize->add_setting('footer_wave_color', array(
+  $wp_customize->add_setting('couleur_bas', array(
     'default' => '',
     'transport' => 'refresh',
   ));
 
-  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_wave_color', array(
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'couleur_bas', array(
       'label' => __('Couleur de la vague du bas', 'theme_tp'),
       'section' => 'pays_section',
-      'settings' => 'footer_wave_color'
+      'settings' => 'couleur_bas'
   )));
 
 // ----------------------- Section erreur --------------------------
