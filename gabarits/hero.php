@@ -2,6 +2,7 @@
 <?php $hero_hero_courriel = get_theme_mod('hero_hero_courriel', ''); ?>
 <?php $hero_color_text = get_theme_mod('hero_color_text', ''); ?>
 <?php $hero_couleur_icones = get_theme_mod('hero_couleur_icones', 'ffffff'); ?>
+<?php $hero_nombre_images_carrousel = get_theme_mod('hero_nombre_images_carrousel', '1'); ?>
 
 <?php
 $hero_nb_icones = get_theme_mod('hero_nb_icones', 1);
@@ -22,14 +23,28 @@ for ($k = 0; $k < $hero_nb_icones; $k++) {
     }
      ?>
         <section class="hero" style="color: <?php echo $hero_color_text ?>;">
-            <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[0] ?>)"></div>
-            <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[1] ?>)"></div>
-            <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[2] ?>)"></div>
+            <?php
+            for ($k = 0; $k < $hero_nombre_images_carrousel; $k++) { ?>
+                <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[$k]; ?>);"></div>
+            <?php } ?>
+
             <div class="hero__radio">
-                <input  class="hero__radio__input" data-id_radio="0"   type="radio" name="carroussel"  checked="checked">
-                <input  class="hero__radio__input" data-id_radio="1" type="radio" name="carroussel">
-                <input  class="hero__radio__input" data-id_radio="2" type="radio" name="carroussel">
+                <?php
+                for ($k = 0; $k < $hero_nombre_images_carrousel; $k++) {
+                    if ($k == 0) { ?>
+                        <div class="hero__radio__container">
+                            <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" type="radio" name="carrousel" checked>
+                            <label for="carrousel<?php echo $k; ?>"><img src="" alt=""></label>
+                        </div>
+                    <?php } else { ?>
+                        <div class="hero__radio__container">
+                            <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" type="radio" name="carrousel">
+                            <label for="carrousel<?php echo $k; ?>"><img src="" alt=""></label>
+                        </div>
+                    <?php } ?>
+                <?php } ?>
             </div>
+
             <div class="hero__contenu global">
                 <div class="hero__animation actif">
                     <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>

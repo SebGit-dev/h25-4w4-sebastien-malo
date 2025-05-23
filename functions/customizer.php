@@ -53,6 +53,17 @@ function theme_tp_customize_register($wp_customize){
       'settings' => 'hero_color_text'
   )));
 
+  $wp_customize->add_setting('hero_nombre_images_carrousel', array(
+      'sanitize_callback' => 'sanitize_text_field',
+      'default' => 1,
+  ));
+
+  $wp_customize->add_control('hero_nombre_images_carrousel', array(
+      'label' => __('Nombre Images Carroussel'),
+      'type' => 'number',
+      'section' => 'hero_section', // Add a default or your own section
+  ));
+
   
 
 // ----------------------- Section Footer --------------------------
