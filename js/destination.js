@@ -51,7 +51,7 @@ function parcourir_bouton() {
     categorie__ul__li.forEach(elm => {
         console.log("Dataset de l'élément :", elm.dataset);  // <-- ajout
         elm.addEventListener('mousedown', function(){
-            const categoryId = elm.dataset.categoryid;
+            const categoryId = elm.dataset.category_id;
             console.log("categoryId cliqué =", categoryId);
             mon_fetch(Number(categoryId));
         });
@@ -64,14 +64,6 @@ function mon_fetch(id_category)
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-
-            console.log("DATA REÇUE :", data);
-
-            if (!Array.isArray(data)) {
-                console.error("Erreur : le format des données n’est pas un tableau.");
-                return;
-            }
-
             const destinationList = document.querySelector('.destination__list');
             destinationList.innerHTML = ""
             data.forEach(article => {

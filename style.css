@@ -207,14 +207,12 @@ Les composants
   background-color: #eaf6ff;
 }
 .destination__titre {
-  margin: 0px;
+  margin: 0vw 10vw 0vw 10vw;
   padding: 0px;
-  margin-left: 10vw;
 }
 .destination__list {
-  margin: 0px;
+  margin: 0vw 10vw 0vw 10vw;
   padding: 0px;
-  margin-left: 10vw;
 }
 
 .categorie__ul {

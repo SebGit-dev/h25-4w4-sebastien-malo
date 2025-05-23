@@ -41,6 +41,7 @@ genere_vague($footer_wave_color);
                 <p>Siège social, 7373 Boul de la Côte-Vertu, Montréal (Saint-Laurent)</p>
                 <p>1 (888) 247-2262</p>
                 <p>admin@gftnth00.mywhc.ca</p>
+                <a href="https://github.com/SebGit-dev/h25-4w4-sebastien-malo/tree/tp2-seb">https://github.com/SebGit-dev/h25-4w4-sebastien-malo/tree/tp2-seb</a>
             </div>
             <div class="piedpage__s1__description">
             Notre mission est d’inspirer et de faciliter l’organisation de voyages inoubliables en offrant une plateforme intuitive et complète. Nous aidons les voyageurs à découvrir des destinations de rêve, à comparer les meilleures offres et à réserver facilement des hébergements, activités et transports.
