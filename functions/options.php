@@ -58,4 +58,16 @@ function modifie_requete_principal( $query ) {
       }
      }
      add_action( 'pre_get_posts', 'modifie_requete_principal' );
+
+  function single_post_temperature($fieldTemperature, $tempRandMin, $tempRandMax) {
+    $valeurTemperature = get_field($fieldTemperature);
+    
+    if (!$valeurTemperature) {
+        $valeurTemperature = rand($tempRandMin, $tempRandMax);
+    }
+
+    return $valeurTemperature;
+  }
+  add_action('wp_enqueue_scripts', 'theme_4w4_enqueue_styles');
+
 ?>

@@ -15,9 +15,9 @@
                     <?= the_category(); ?>
                 </div>
                 <div class="single_post_temperature">
-                    <p>Temperature maximum: <?php the_field('temperature_maximum');?> C&#176;</p>
-                    <p>Temperature minimum: <?php the_field('temperature_minimum');?> C&#176;</p>
-                    <p>Temperature moyenne: <?php the_field('temperature_moyenne');?> C&#176;</p>
+                    <p>Temperature maximum: <?= single_post_temperature('temperature_maximum', 25, 40); ?> C&#176;</p>
+                    <p>Temperature minimum: <?= single_post_temperature('temperature_minimum', 0, 25); ?> C&#176;</p>
+                    <p>Temperature moyenne: <?= single_post_temperature('temperature_moyenne', 10, 30); ?> C&#176;</p>
                 </div>
                 <div class="single_post_destination_infos">
                     <p>Auteur: <?php the_author(); ?></p>
