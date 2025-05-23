@@ -107,6 +107,27 @@ function theme_tp_customize_register($wp_customize){
     'type' => 'text',
   ));
 
+  $wp_customize->add_setting('footer_destination_titre', array(
+    'default' => __('La meilleure destination', 'theme_tp'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('footer_destination_titre', array(
+    'label' => __('Destination titre', 'theme_tp'),
+    'section' => 'footer_section',
+    'type' => 'text',
+  ));
+
+  $wp_customize->add_setting('footer_destination_img', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_destination_img', array(
+      'label' => __('Image destination footer', 'theme_tp'),
+      'section' => 'footer_section',
+  )));
+
 // ----------------------- Section erreur --------------------------
 
 // Erreur Section

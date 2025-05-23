@@ -2,6 +2,8 @@
 <?php $footer_adresse = get_theme_mod('footer_adresse', ''); ?>
 <?php $footer_telephone = get_theme_mod('footer_telephone', ''); ?>
 <?php $footer_courriel = get_theme_mod('footer_courriel', ''); ?>
+<?php $footer_destination_titre = get_theme_mod('footer_destination_titre', ''); ?>
+<?php $footer_destination_img = get_theme_mod('footer_destination_img', ''); ?>
 <?php 
 genere_vague();
 ?>
@@ -20,8 +22,14 @@ genere_vague();
                 <div class="piedpage__s1__adresse__coord">
                     Recherche de pays a visiter
                 </div>
+
                 <div class="piedpage__s1__adresse__recherche">
                     <?php get_search_form(); ?>
+                </div>
+
+                <div class="piedpage__s1__adresse__destination">
+                    <?php echo $footer_destination_titre; ?>
+                    <img class="piedpage__s1__adresse__destination_img" src="<?php echo $footer_destination_img; ?>" alt="">
                 </div>
             </div>
             <div class="piedpage__s1__infos">
