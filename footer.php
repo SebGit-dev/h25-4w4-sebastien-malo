@@ -28,8 +28,10 @@ genere_vague();
                 </div>
 
                 <div class="piedpage__s1__adresse__destination">
-                    <?php echo $footer_destination_titre; ?>
-                    <img class="piedpage__s1__adresse__destination_img" src="<?php echo $footer_destination_img; ?>" alt="">
+                    <div class="piedpage__s1__adresse__destination__titre">
+                        <?php echo $footer_destination_titre; ?>
+                    </div>
+                    <img class="piedpage__s1__adresse__destination__img" src="<?php echo $footer_destination_img; ?>" alt="">
                 </div>
             </div>
             <div class="piedpage__s1__infos">

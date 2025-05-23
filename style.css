@@ -473,6 +473,16 @@ footer a {
 .piedpage__s1__adresse {
   flex: 0 0 20%;
 }
+.piedpage__s1__adresse__destination__img {
+  width: 15vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 30px;
+}
+.piedpage__s1__adresse__destination__titre {
+  margin: 5vh 0vh 1vh 0vh;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 .piedpage__s1__description {
   flex: 1;
 }
