@@ -44,3 +44,10 @@ function genere_vague(){?>
     </path>
     </svg>
 <?php }
+
+/**Fonction pour générer les icones de réseaux sociaux **/
+
+function genere_icone($reseau, $lien_reseau, $couleur)
+{ ?>
+    <a href="<?= $lien_reseau; ?>"><img class="iconeImg" src="https://s2.svgbox.net/social.svg?ic=<?= $reseau ?>&color=<?= $couleur ?>" width="20" height="20"></a>
+<?php  }

@@ -188,7 +188,63 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'erreur
     'section' => 'erreur_section',
 )));
 
+// ----------------------- Section icones --------------------------
 
+  $wp_customize->add_section('icones_section', array(
+    'title' => __('Icones Section', 'theme_tp'),
+    'priority' => 30,
+  ));
+
+
+  $wp_customize->add_setting('hero_nb_icones', array(
+      'sanitize_callback' => 'sanitize_text_field',
+      'default' => 1,
+  ));
+
+  $wp_customize->add_control('hero_nb_icones', array(
+      'type' => 'number',
+      'section' => 'icones_section', // Add a default or your own section
+      'label' => __('Nombre Icones Sociaux'),
+  ));
+
+  $hero_nb_icones = get_theme_mod('hero_nb_icones', '1');
+
+  for ($k = 0; $k < $hero_nb_icones; $k++) {
+      $wp_customize->add_setting('hero_icones_' . $k, array(
+          'default' => __('wordpress', 'theme_tp'),
+          'sanitize_callback' => 'sanitize_text_field'
+      ));
+
+      $wp_customize->add_control('hero_icones_' . $k, array(
+          'label' => __('Icones Reseaux Sociaux ' . ($k + 1), 'theme_tp'),
+          'section' => 'icones_section',
+          'type' => 'text',
+      ));
+  }
+
+  for ($k = 0; $k < $hero_nb_icones; $k++) {
+      $wp_customize->add_setting('hero_lien_reseaux_' . $k, array(
+          'default' => __('https://github.com/SebGit-dev/h25-4w4-sebastien-malo/tree/tp2-seb', 'theme_tp'),
+          'sanitize_callback' => 'sanitize_text_field'
+      ));
+
+      $wp_customize->add_control('hero_lien_reseaux_' . $k, array(
+          'label' => __('Liens Reseaux Sociaux ' . ($k + 1), 'theme_tp'),
+          'section' => 'icones_section',
+          'type' => 'text',
+      ));
+  }
+
+  $wp_customize->add_setting('hero_couleur_icones', array(
+    'default' => 'ffffff',
+    'sanitize_callback' => 'sanitize_hex_color_no_hash',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_couleur_icones', array(
+          'label' => __('Couleur Icones Sociaux'),
+          'section' => 'icones_section',
+      ))
+  );
 }
 
 add_action('customize_register', 'theme_tp_customize_register');
