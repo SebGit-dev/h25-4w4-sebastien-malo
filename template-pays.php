@@ -16,6 +16,10 @@ get_header();
         endif; ?>
     </div>
 </section>
+
+<?php 
+genere_vague();
+?>
  
 <!-- Rest API -->
 <section class="destination__pays">

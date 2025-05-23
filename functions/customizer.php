@@ -139,6 +139,35 @@ function theme_tp_customize_register($wp_customize){
       'section' => 'footer_section',
   )));
 
+  // ----------------------- Section Pays --------------------------
+
+  $wp_customize->add_section('pays_section', array(
+    'title' => __('Pays Section', 'theme_tp'),
+    'priority' => 30,
+  ));
+
+  $wp_customize->add_setting('rest_api_wave_color', array(
+    'default' => '',
+    'transport' => 'refresh',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'rest_api_wave_color', array(
+      'label' => __('Couleur de la vague du haut', 'theme_tp'),
+      'section' => 'pays_section',
+      'settings' => 'rest_api_wave_color'
+  )));
+
+  $wp_customize->add_setting('footer_wave_color', array(
+    'default' => '',
+    'transport' => 'refresh',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_wave_color', array(
+      'label' => __('Couleur de la vague du bas', 'theme_tp'),
+      'section' => 'pays_section',
+      'settings' => 'footer_wave_color'
+  )));
+
 // ----------------------- Section erreur --------------------------
 
 // Erreur Section
