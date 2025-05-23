@@ -13,12 +13,12 @@ get_header();
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <article>
                         <h2><?php the_title(); ?></h2>
-                        <p>Date:
-                        <?php the_field('date'); ?></p>
-                        <p>Coordonnées du site:
-                        <?php the_field('coordonnees_pays'); ?></p>
-                        <p>conférencier du site:
-                        <?php the_field('conferencier'); ?></p>
+                        <h6>Date:
+                        <?php the_field('date'); ?></h6>
+                        <h6>Coordonnées du site:
+                        <?php the_field('coordonnees_pays'); ?></h6>
+                        <h6>conférencier du site:
+                        <?php the_field('conferencier'); ?></h6>
                         <div><?php the_content(); ?></div>
                     </article>
             <?php endwhile;
